@@ -644,14 +644,7 @@ var texty=["Wybierz miasto","Wybierz przystanek","Wybierz godzinę","Wybierz mia
 </style>
 <body onload="czasSerwera(),kierunki(),rodzaje(),Fcena()">
 
-<//img src="http://aktrans.pl/logo_aktrans.jpg" width="80" align="left" alt="sołectwo Grzawa, parafia Grzawa" /><center>
-<h2><i><u>Formularz zamówienia biletu miesięcznego 01'2018 v.5.  </h2> <br></i></u></b>   </formularz biletu miesięcznego - początek>  <//br>
-
-
-
-            </p>
-        </div>
-	</div>
+  
     <div id="boxy">
     		<div id="boxy_text_11">
         	
@@ -665,42 +658,16 @@ var texty=["Wybierz miasto","Wybierz przystanek","Wybierz godzinę","Wybierz mia
 
 
 <b> 
-<?php
-
-// Wynik działania funkcji w komentarzach
-
-//echo date("Y-m-d"); // 2004-12-29
-//echo "<br />"; // to tylko po to, aby nam się wszystko nie zlało do kupy ;-)
-//echo date("Y.m.d"); // 2004.12.29
-//echo "<br />";
-//echo date("Y m d"); // 2004 12 29
-//echo "<br />";
-//echo date("Y"); // 2004
-//echo "<br />";
-//echo date("y"); //04
-// oczywiście kombinacji jest znacznie wiecej
-// ale to zostawiam już Wam
-//echo "<br />";
-// Teraz do daty dodamy także czas
-////////////////////////////echo date("Y-m-d H:i:s"); // 2004-12-29 22:35:26
-//echo "<br />";
-//echo date("H.i d-m-Y"); // 22.45 29-12-2004
-$czas=0;
-
-?> <//br>
+ <//br>
 
 
 <//?php require('.czas.php'); ?> </b>
 <//br>
 <font color="red" size="3"> UWAGA - Zamówienia złożone do godz. 17:00 (dni robocze) mogą być realizowane dnia następnego. Zamówienia złożone po godz. 17:00 będą realizowane w drugiej dobie od zamówienia.  </font>
-<font size="2">Przed złożeniem zamówienia zapoznaj sie z <a href="http://aktrans.pl/pliki/regulamin2015.pdf">regulaminem</a> i <a href="http://www.aktrans.pl/cennik.php">cennikiem</a>.<br>
 
 <br>
 
 
-<///img src="arrow.gif" width="10"><///a href="http://aktrans.pl/cennik.php"><b></Cennik biletów miesięcznych ważny od 01.09.2017></b></a><///br>
-<img src="arrow.gif" width="10"><a href="http://aktrans.pl/cennik.php"><b><font color="red">   Cennik biletów miesięcznych ważny od 01.09.2017</font></b></a><br>
-<img src="arrow.gif" width="10"><a href="http://aktrans.pl/pliki/regulamin2015.pdf"><b>  Regulamin</b></a><br><br>
 <br>
 <font size="2">Bilety miesięczne na kolejny miesiąc można zamawiać od 23 dnia miesiąca poprzedzającego.
 <br>
@@ -991,42 +958,6 @@ if (wynC == null) { bledy = bledy + " - wprowadź lub popraw numer kursu ";}
    </tr>
    <br>   </table>
 	  
-<center><br><font size="3">UWAGA !!!!  Należność przy płatności przelewowej proszę wpłacać na konto: <//h1><br>
-<br><b>Bank Spółdzielczy w Miedźnej <br>nr konta 61 8446 0006 2001 0007 7480 0001.</b></p><br>
-<hr></font><///tr>
 
-<///tr bgcolor="#FFFFFF">
-    
-<br><br>Formularz zamówienia biletu 01'2018 - <a href="mailto:biuro@portalwww.com.pl?subject=zamów bilet - formularz kontakt 01'2018"> zgłoś problem</a><br><br><br>
-</td></tr></table></form>
-</body>
-
- </p><br><br>
-
-</ip> <?php
-
-  $fp=fopen(".ip_bilety_www.txt", "a"); //"w" tworzymy zmienną $fp czyli otwieramy plik ip.txt z parametrem write (zapisz)
-
-  flock($fp, 2); // blokujemy plik. Nie dopuszczamy do otwarcia jednocześnie przez kilka użytkowników
-  fwrite($fp, $_SERVER['REMOTE_ADDR']); // wpisujemy nasze ip do pliku
-  flock($fp, 3); // uwalniamy nasz plik
-  fclose($fp);  // kończymy pracę z plikiem i zamykamy go.
-
-?>
-
-</fk  - koniec end>
-
-<//?php
-$DO = 'admin@grzawa.eu';
-$Temat = ' informacja zamowiony bilet przez APK';
-$tresc = ' użytkownik ';
-$Tresc=' - wizyta na stronie APK'.$tresc.$user;
-$naglowki  = "From:bilet@AKTrans";
-$naglowki .= "";
-$naglowki .= "";
-
-mail($DO, $Temat, $Tresc, $naglowki);    
-
-?>
 </body>
 </html>
