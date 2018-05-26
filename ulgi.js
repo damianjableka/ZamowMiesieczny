@@ -1,0 +1,2 @@
+﻿var ulgi={nazwa:["Normalny","Ulgowy - nauczyciel","Ulgowy - niewidomy","Ulgowy - uczeń","Ulgowy - student, doktorant","Ulgowy - dziecko niepełnosprawne","Ulgowy - niewidomy nie zdolny do samodzielnej egzystencji"],
+ulga:[0,33,37,49,51,78,93]}
